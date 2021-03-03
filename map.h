@@ -55,13 +55,14 @@ FrameSize map = pixelSizeToScreenSize(width, height, 1200, 800);
 bool init = false;
 
 float verts[] = {
-    -map.w/2, -map.h/2, 0, 0.0f, 1.0f,
-     map.w/2, -map.h/2, 0, 1.0f, 1.0f,
-    -map.w/2,  map.h/2, 0, 0.0f, 0.0f,
+     //X       Y        Z     TEXCOORDS
+    -map.w/2, -map.h/2, 0,   0.0f, 1.0f,
+     map.w/2, -map.h/2, 0,   1.0f, 1.0f,
+    -map.w/2,  map.h/2, 0,   0.0f, 0.0f,
     
-     map.w/2,  map.h/2, 0, 1.0f, 0.0f,
-     map.w/2, -map.h/2, 0, 1.0f, 1.0f,
-    -map.w/2,  map.h/2, 0, 0.0f, 0.0f
+     map.w/2,  map.h/2, 0,   1.0f, 0.0f,
+     map.w/2, -map.h/2, 0,   1.0f, 1.0f,
+    -map.w/2,  map.h/2, 0,   0.0f, 0.0f
 };
 
 void start_map() {
